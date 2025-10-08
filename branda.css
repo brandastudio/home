@@ -98,6 +98,33 @@ h1{ margin:0; font-size:clamp(28px,4.5vw,40px); letter-spacing:0.5px; color:var(
   }
 }
 
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .gallery-custom {
+    grid-template-columns: 1fr;   /* una colonna */
+    gap: 12px;
+  }
+  /* ogni elemento occupa tutta la riga */
+  .gallery-custom .big,
+  .gallery-custom .wide,
+  .gallery-custom .tall {
+    grid-column: 1 / -1 !important;
+    aspect-ratio: auto;           /* lascia altezza naturale */
+  }
+  .gallery-custom figure { overflow: hidden; border-radius: 12px; }
+  .gallery-custom img {
+    width: 100%;
+    height: auto;                 /* niente schiacciamenti */
+    object-fit: cover;
+    display: block;
+  }
+}
+
+
+
+
+
+
 
 /* Titoli di sezione */
 .section-title{ font-weight:800; color:var(--vinaccia); margin:24px 0 12px; text-align:center }
