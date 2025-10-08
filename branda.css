@@ -192,3 +192,22 @@ main section {
 main section:not(:first-child) {
   padding-top: 20px;
 }
+
+
+
+.member {
+  text-decoration: none;     /* rimuove la sottolineatura */
+  color: inherit;            /* mantiene il colore del testo del contesto */
+}
+
+.member b {
+  text-decoration: none;
+  color: var(--vinaccia);    /* oppure il colore che vuoi per i nomi */
+  font-weight: 800;
+  transition: color 0.2s ease;
+}
+
+/* effetto hover elegante */
+.member:hover b {
+  color: var(--vinaccia-80);
+}
