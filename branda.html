@@ -1,0 +1,168 @@
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Branda Studio</title>
+    <meta name="description" content="Branda Studio — sala di registrazione. Foto, info, team, link utili." />
+    <meta property="og:title" content="Branda Studio" />
+    <meta property="og:description" content="Sala di registrazione — foto, team, link utili e playlist." />
+    <meta property="og:type" content="website" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="branda.css" />
+  </head>
+
+
+
+
+  <body>
+    <div class="wrap">
+
+      <header>
+        <div class="logo" aria-label="Branda Studio">
+          <img src="logo.png" alt="Logo Branda Studio" class="logo-img" />
+        </div>
+      </header>
+
+
+      <main>
+        <!-- FOTO STUDIO -->
+        <section aria-labelledby="foto">
+          
+          <div class="gallery">
+            <figure><img src="foto1.jpg" alt="Foto studio 1" /></figure>
+            <figure><img src="foto2.jpg" alt="Foto studio 2" /></figure>
+            <figure><img src="foto3.jpg" alt="Foto studio 3" /></figure>
+            <figure><img src="foto4.jpg" alt="Foto studio 4" /></figure>
+            <figure><img src="foto5.jpg" alt="Foto studio 5" /></figure>
+            <figure><img src="foto6.jpg" alt="Foto studio 6" /></figure>
+          </div>
+        </section>
+
+        <!-- SERVIZI -->
+        <section aria-labelledby="links">
+          <h2 id="links" class="section-title">COSA FACCIAMO</h2>
+        
+          <div class="services-grid">
+            <!-- 1 -->
+            <article class="service-card">
+              <h3 class="service-title">Arrangiamento &amp; Produzione</h3>
+              <div class="service-desc">
+                <p>Ci muoviamo tra analogico e digitale: programmazione al computer e registrazioni suonate.
+                Seguiamo dischi e singoli, arrangiamenti, remix, e parti di archi/fiati per il tuo brano.</p>
+              </div>
+            </article>
+        
+            <!-- 2 -->
+            <article class="service-card">
+              <h3 class="service-title">Registrazioni</h3>
+              <div class="service-desc">
+                <p>Fino a 18 canali contemporaneamente. Sessioni per batterie, archi, fiati, voci, singoli strumenti o band 5/6 elementi.
+                Parco microfoni completo. Scheda tecnica su richiesta.</p>
+              </div>
+            </article>
+        
+            <!-- 3 -->
+            <article class="service-card">
+              <h3 class="service-title">Mix &amp; Master</h3>
+              <div class="service-desc">
+                <p>Mix e mastering in digitale per canzoni, interviste e podcast. Pulizia del parlato ed editing audio.</p>
+              </div>
+            </article>
+        
+            <!-- 4 -->
+            <article class="service-card">
+              <h3 class="service-title">Soundtrack &amp; Sound Design</h3>
+              <div class="service-desc">
+                <p>Musica per l’immagine, colonne sonore e creazione di rumori, con registrazioni e sintetizzatori.</p>
+              </div>
+            </article>
+        
+            <!-- 5 -->
+            <article class="service-card">
+              <h3 class="service-title">Allestimento Live</h3>
+              <div class="service-desc">
+                <p>Siamo una band al completo: arrangi live e live session. Sala per scrittura, prove e allestimenti con possibilità di registrare.
+                Spazio domestico per lavorare anche in full-immersion 2–3 giorni.</p>
+              </div>
+            </article>
+        
+            <!-- 6 -->
+            <article class="service-card">
+              <h3 class="service-title">Lezioni individuali</h3>
+              <div class="service-desc">
+                <p>Lezioni di basso, batteria, chitarra, violino, pianoforte, produzione, sound design e Ableton. Scrivici per info.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+        
+
+        <section aria-labelledby="team">
+          <h2 id="team" class="section-title">CHI SIAMO</h2>
+  
+          <p>Ci siamo incontrati nel 2022, appena arrivati in un sud di milano post covid. Abbiamo iniziato a suonare e fare musica insieme, produrre e registrare brani in vari studi milanesi, arrangiare live per i nostri progetti interni e per artisti esterni. A settembre 2024, con il progetto di creare il nostro primo studio, siamo andati a vivere insieme. Così nasce il branda studio: un ex ufficio trasformato in uno spazio di massima creatività, il nostro “parco giochi” e casa nostra, un posto dove lavorare e fare musica con serenità. </p>
+          <div class="team">
+            <article class="member">
+              <img class="avatar" src="team1.jpg" alt="Ritratto membro 1" />
+              <b>DEM</b>
+            </article>
+  
+            <article class="member">
+              <img class="avatar" src="team2.jpg" alt="Ritratto membro 2" />
+              <b>GRONDA</b>
+            </article>
+  
+            <article class="member">
+              <img class="avatar" src="team3.jpg" alt="Ritratto membro 3" />
+              <b>DELE</b>
+            </article>
+  
+            <article class="member">
+              <img class="avatar" src="team4.jpg" alt="Ritratto membro 4" />
+              <b>TEO G</b>
+            </article>
+  
+            <article class="member">
+              <img class="avatar" src="team5.jpg" alt="Ritratto membro 5" />
+              <b>JOHN</b>
+            </article>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+      </main>
+
+      <footer>
+        © <span id="year"></span> Branda Studio — Milano
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+  
+  
